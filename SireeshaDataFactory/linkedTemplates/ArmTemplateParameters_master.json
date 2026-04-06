@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "SireeshaDataFactory"
+		},
+		"AzureDBLinkedService_password": {
+			"value": ""
+		},
+		"LinkedService1_accountKey": {
+			"value": ""
+		},
+		"AzureDBLinkedService_properties_typeProperties_server": {
+			"value": "sdbserver.database.windows.net"
+		},
+		"AzureDBLinkedService_properties_typeProperties_database": {
+			"value": "AzureDB1"
+		},
+		"AzureDBLinkedService_properties_typeProperties_userName": {
+			"value": "Admin_Sireesha"
+		},
+		"GitLinkedService_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com"
+		},
+		"LinkedService1_properties_typeProperties_url": {
+			"value": "https://sireeshastoragegroup.dfs.core.windows.net/"
+		},
+		"RestService_properties_typeProperties_url": {
+			"value": "https://pokeapi.co/api/v2/pokemon"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
