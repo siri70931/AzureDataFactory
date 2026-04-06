@@ -1,0 +1,23 @@
+{
+	"name": "GitDataSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GitLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "siri70931/AzureDataFactory/refs/heads/main/Fact_Sales_Edit.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

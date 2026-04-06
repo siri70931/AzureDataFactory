@@ -1,0 +1,9 @@
+{
+	"name": "SireeshaDataFactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "22b08a63-b19e-40d0-bce0-75374f100fd2",
+		"tenantId": "c56ae84d-81ef-48dc-a12a-6e5515329663"
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"name": "cdc_json_initially",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkedService1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "cdc.json",
+				"folderPath": "CSVFiles",
+				"fileSystem": "source"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
