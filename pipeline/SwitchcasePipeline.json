@@ -85,9 +85,9 @@
 														"type": "DatasetReference",
 														"parameters": {
 															"container": "source",
-															"folder": "CSVFiles",
+															"folder": "files",
 															"file": {
-																"value": "@item().name",
+																"value": "@{item().name}",
 																"type": "Expression"
 															}
 														}
@@ -164,9 +164,9 @@
 														"type": "DatasetReference",
 														"parameters": {
 															"container": "source",
-															"folder": "CSVFiles",
+															"folder": "files",
 															"file": {
-																"value": "@item().name",
+																"value": "@{item().name}",
 																"type": "Expression"
 															}
 														}
@@ -243,7 +243,7 @@
 														"type": "DatasetReference",
 														"parameters": {
 															"container": "source",
-															"folder": "CSVFiles",
+															"folder": "files",
 															"file": {
 																"value": "@item().name",
 																"type": "Expression"
@@ -259,7 +259,7 @@
 															"container": "sink",
 															"folder": "drivers",
 															"file": {
-																"value": "@item().name",
+																"value": "@{item().name}.csv",
 																"type": "Expression"
 															}
 														}
@@ -296,6 +296,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
